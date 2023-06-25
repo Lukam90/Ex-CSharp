@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.EntityFrameworkCore;
 
-namespace BlazorServerCRUD.Data;
+namespace ServerCRUD.Data;
 
 public class GameService : IGameService
 {

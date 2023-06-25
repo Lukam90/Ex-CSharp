@@ -1,4 +1,4 @@
-namespace BlazorServerCRUD.Data;
+namespace ServerCRUD.Data;
 
 public class Game
 {

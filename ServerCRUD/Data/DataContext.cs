@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace BlazorServerCRUD.Data;
+namespace ServerCRUD.Data;
 
 public class DataContext : DbContext
 {
