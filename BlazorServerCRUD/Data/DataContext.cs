@@ -16,13 +16,13 @@ public class DataContext : DbContext
                 Id = 1,
                 Name = "Half Life 2",
                 Developer = "Valve",
-                ReleaseDate = new DateTime(2004, 11, 16)
+                Release = new DateTime(2004, 11, 16)
             },
             new Game {
                 Id = 2,
                 Name = "Day of the Tentacle",
                 Developer = "Lucas Arts",
-                ReleaseDate = new DateTime(1993, 5, 25)
+                Release = new DateTime(1993, 5, 25)
             }
         );
     }

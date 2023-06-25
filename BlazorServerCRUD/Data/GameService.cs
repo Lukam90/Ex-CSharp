@@ -17,7 +17,6 @@ public class GameService : IGameService
     }
 
     public List<Game> Games { get; set; } = new List<Game>();
-    List<Game> IGameService.Games { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
     public async Task LoadGames()
     {
@@ -50,7 +49,7 @@ public class GameService : IGameService
 
         dbGame.Name = game.Name;
         dbGame.Developer = game.Developer;
-        dbGame.ReleaseDate = game.ReleaseDate;
+        dbGame.Release = game.Release;
 
         await _context.SaveChangesAsync();
 

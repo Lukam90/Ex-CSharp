@@ -8,5 +8,5 @@ public class Game
 
     public string Developer { get; set; } = string.Empty;
 
-    public DateTime? ReleaseDate { get; set; }
+    public DateTime? Release { get; set; }
 }
