@@ -17,3 +17,9 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 
 dotnet add package Swashbuckle.AspNetCore
+
+**Migrations**
+
+dotnet ef migrations add Initial
+
+dotnet ef database update
