@@ -18,11 +18,11 @@ export PATH=$HOME/.dotnet/tools:$PATH
 
 **Packages**
 
-dotnet tool install --global dotnet-aspnet-codegenerator
+dotnet tool install --global dotnet-aspnet-codegenerator<br>
 dotnet tool install --global dotnet-ef
 
-dotnet add package Microsoft.EntityFrameworkCore.Design
-dotnet add package Microsoft.EntityFrameworkCore.SQLite
+dotnet add package Microsoft.EntityFrameworkCore.Design<br>
+dotnet add package Microsoft.EntityFrameworkCore.SQLite<br>
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
 
 **Migrations**

@@ -12,8 +12,8 @@ dotnet tool install --global dotnet-ef
 
 **Packages**
 
-dotnet add package Microsoft.EntityFrameworkCore
-dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore<br>
+dotnet add package Microsoft.EntityFrameworkCore.Design<br>
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 
 dotnet add package Swashbuckle.AspNetCore
