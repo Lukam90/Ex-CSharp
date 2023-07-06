@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+
 using MudBlazorApp.Data.Context;
 using MudBlazorApp.Models;
 
@@ -10,7 +11,7 @@ public class SupplierRepository : ISupplierRepository
 
     public SupplierRepository(SupplierDbContext supplierDbContext)
     {
-        _supplierDbContext = supplierDbContext;
+        _supplierDbContext = supplierDbContext ?? throw new ArgumentNullException(nameof(supplierDbContext));
     }
 
     public async Task<List<Supplier>> GetSuppliers()
