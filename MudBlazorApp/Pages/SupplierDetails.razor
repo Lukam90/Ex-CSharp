@@ -1,0 +1,16 @@
+﻿@using MudBlazorApp.Models
+
+@inject HttpClient HttpClient
+
+<PageTitle>Supplier Details</PageTitle>
+
+<MudText Typo="Typo.h3" GutterBottom="true">Supplier Details</MudText>
+
+@code {
+    protected List<Supplier> suppliers = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        suppliers = await HttpClient.GetFromJsonAsync<List<Supplier>>("api/Supplier");
+    }
+}
