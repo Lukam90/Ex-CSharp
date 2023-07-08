@@ -16,15 +16,15 @@ ng serve -o
 
 ng g s super-hero --skip-tests
 
+## SuperHeroAPI
 
+**Create**
 
+dotnet new webapi -o SuperHeroAPI --no-https -f net7.0
 
+**Run**
 
-
-
-
-
-
+dotnet watch
 
 
 
