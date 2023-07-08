@@ -1,11 +1,13 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
+//using Microsoft.AspNetCore.Components;
+//using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 using Microsoft.EntityFrameworkCore;
 
-using MudBlazorApp.Data;
 using MudBlazor.Services;
-using MudBlazorApp.Data.Context;
+
+//using MudBlazorApp.Server.Data;
+using MudBlazorApp.Server.Data.Context;
+using MudBlazorApp.Server.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,7 @@ builder.Services.AddMudServices();
 
 // Database Dependency
 builder.Services.AddDbContext<SupplierDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
 
 var app = builder.Build();
 

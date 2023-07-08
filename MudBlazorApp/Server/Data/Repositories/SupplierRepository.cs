@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 
-using MudBlazorApp.Data.Context;
-using MudBlazorApp.Models;
+using MudBlazorApp.Server.Data.Context;
+using MudBlazorApp.Server.Models;
 
-namespace MudBlazorApp.Data.Repositories;
+namespace MudBlazorApp.Server.Data.Repositories;
 
 public class SupplierRepository : ISupplierRepository
 {

@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 
-using MudBlazorApp.Models;
+using MudBlazorApp.Server.Models;
 
-namespace MudBlazorApp.Data.Context;
+namespace MudBlazorApp.Server.Data.Context;
 
 public class SupplierDbContext : DbContext
 {

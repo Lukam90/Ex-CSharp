@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using MudBlazorApp.Data.Repositories;
-using MudBlazorApp.Models;
-using MudBlazorApp.Models.Dto;
+
+using MudBlazorApp.Server.Data.Repositories;
+using MudBlazorApp.Server.Models;
+using MudBlazorApp.Server.Models.Dto;
 
 namespace MudBlazorApp.Controllers;
 

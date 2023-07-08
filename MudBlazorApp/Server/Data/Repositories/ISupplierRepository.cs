@@ -1,6 +1,6 @@
-using MudBlazorApp.Models;
+using MudBlazorApp.Server.Models;
 
-namespace MudBlazorApp.Data.Repositories;
+namespace MudBlazorApp.Server.Data.Repositories;
 
 public interface ISupplierRepository
 {

@@ -1,8 +1,7 @@
-namespace MudBlazorApp.Models;
+namespace MudBlazorApp.Server.Models.Dto;
 
-public class Supplier
+public class CreateSupplierDto
 {
-    public Guid Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public string Company { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
