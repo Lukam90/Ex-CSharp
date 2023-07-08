@@ -16,6 +16,10 @@ ng serve -o
 
 ng g s super-hero --skip-tests
 
+**Components**
+
+ng g c edit-hero --skip-tests
+
 ## SuperHeroAPI
 
 **Create**
