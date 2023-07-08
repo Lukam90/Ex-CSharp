@@ -26,11 +26,17 @@ dotnet new webapi -o SuperHeroAPI --no-https -f net7.0
 
 dotnet watch
 
+**Packages**
 
+dotnet add package Microsoft.EntityFrameworkCore<br>
+dotnet add package Microsoft.EntityFrameworkCore.Design<br>
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 
+**Migrations**
 
+dotnet ef migrations add Initial
 
-
+dotnet ef database update
 
 
 
