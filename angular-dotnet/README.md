@@ -6,7 +6,7 @@
 
 **Create**
 
-ng new superheroes-app
+ng new SuperHeroUI
 
 **Run**
 
