@@ -12,6 +12,10 @@ ng new SuperHeroUI
 
 ng serve -o
 
+**Packages**
+
+ng add @angular/material
+
 **Services**
 
 ng g s super-hero --skip-tests
@@ -41,23 +45,3 @@ dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet ef migrations add Initial
 
 dotnet ef database update
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
