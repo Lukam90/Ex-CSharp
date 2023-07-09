@@ -13,3 +13,9 @@ dotnet dev-certs https --trust
 **Run**
 
 dotnet watch
+
+**Packages**
+
+dotnet add package Microsoft.EntityFrameworkCore<br>
+dotnet add package Microsoft.EntityFrameworkCore.Design<br>
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
