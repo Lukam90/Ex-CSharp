@@ -6,16 +6,16 @@ target="$HOME/Téléchargements/Copies/CP-$name-$date"
 if [ ! -d $target ]; then
     mkdir $target
 
-    cp $back/*.cs* $target
-    cp $back/*.js* $target
+    cp *.cs* $target
+    cp *.js* $target
 
-    cp -r $back/Controllers $target
-    #cp -r $back/Data $target
-    #cp -r $back/Migrations $target
-    cp -r $back/Models $target
-    cp -r $back/Properties $target
-    cp -r $back/Views $target
-    cp -r $back/wwwroot $target
+    cp -r Controllers $target
+    #cp -r Data $target
+    #cp -r Migrations $target
+    cp -r Models $target
+    cp -r Properties $target
+    cp -r Views $target
+    cp -r wwwroot $target
 fi
 
 echo "Copie $name - $date"

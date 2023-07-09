@@ -19,3 +19,9 @@ dotnet watch
 dotnet add package Microsoft.EntityFrameworkCore<br>
 dotnet add package Microsoft.EntityFrameworkCore.Design<br>
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+**Migrations**
+
+dotnet ef migrations add AddCategoryToDatabase
+
+dotnet ef database update
