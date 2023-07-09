@@ -42,6 +42,8 @@ public class CategoryController : Controller
             _db.Categories.Add(category);
             _db.SaveChanges();
 
+            TempData["success"] = "Category created successfully";
+
             return RedirectToAction("Index");
         }
 
@@ -81,9 +83,49 @@ public class CategoryController : Controller
             _db.Categories.Update(category);
             _db.SaveChanges();
 
+            TempData["success"] = "Category updated successfully";
+
             return RedirectToAction("Index");
         }
 
         return View(category);
+    }
+
+    //GET
+    public IActionResult Delete(int? id)
+    {
+        if (id == null || id == 0)
+        {
+            return NotFound();
+        }
+
+        var category = _db.Categories.Find(id);
+
+        if (category == null)
+        {
+            return NotFound();
+        }
+
+        return View(category);
+    }
+
+    //POST
+    [HttpPost, ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    public IActionResult DeletePOST(int? id)
+    {
+        var category = _db.Categories.Find(id);
+
+        if (category == null)
+        {
+            return NotFound();
+        }
+
+        _db.Categories.Remove(category);
+        _db.SaveChanges();
+
+        TempData["success"] = "Category deleted successfully";
+
+        return RedirectToAction("Index");
     }
 }
