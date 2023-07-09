@@ -1,6 +1,8 @@
 # angular-dotnet
 
-[CRUD with Angular 14 & .NET 6 🚀 Web API, EF Core & SQL Server](https://www.youtube.com/watch?v=dtthbiP3SE0) de *Patrick God*
+- [CRUD with Angular 14 & .NET 6 🚀 Web API, EF Core & SQL Server](https://www.youtube.com/watch?v=dtthbiP3SE0)
+- [.NET 6 Web API 🔒 Create JSON Web Tokens (JWT) - User Registration / Login / Authentication](https://www.youtube.com/watch?v=v7q3pEK1EA0)
+ de *Patrick God*
 
 ## superheroes-app
 
