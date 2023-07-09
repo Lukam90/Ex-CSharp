@@ -1,4 +1,6 @@
-﻿<h3>Products</h3>
+﻿@inject HttpClient Http
+
+<h3>Products</h3>
 
 <ul class="list-unstyled">
 @foreach (var product in Products)
@@ -24,8 +26,9 @@
 </ul>
 
 @code {
-    private static List<Product> Products = new List<Product>
-    {
+    private static List<Product> Products = new List<Product>();
+    /*{
+        
         new Product
         {
             Id = 1,
@@ -50,5 +53,5 @@
             ImageUrl = "https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/220px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
             Price = 59.99m
         },
-    };
+    };*/
 }
