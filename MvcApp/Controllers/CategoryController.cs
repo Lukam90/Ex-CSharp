@@ -16,8 +16,18 @@ public class CategoryController : Controller
 
     public IActionResult Index()
     {
-        IEnumerable<Category> objCategoryList = _db.Categories;
+        IEnumerable<Category> categories = _db.Categories;
 
-        return View(objCategoryList);
+        return View(categories);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Create(Category category)
+    {
+        _db.Categories.Add(category);
+        _db.SaveChanges();
+
+        return RedirectToAction("Index");
     }
 }
