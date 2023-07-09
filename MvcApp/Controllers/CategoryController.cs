@@ -21,13 +21,30 @@ public class CategoryController : Controller
         return View(categories);
     }
 
+    //GET
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    //POST
     [HttpPost]
     [ValidateAntiForgeryToken]
     public IActionResult Create(Category category)
     {
-        _db.Categories.Add(category);
-        _db.SaveChanges();
+        if (category.Name == category.DisplayOrder.ToString())
+        {
+            ModelState.AddModelError("name", "The DisplayOrder can't exactly match the Name.");
+        }
 
-        return RedirectToAction("Index");
+        if (ModelState.IsValid)
+        {
+            _db.Categories.Add(category);
+            _db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        return View(category);
     }
 }
