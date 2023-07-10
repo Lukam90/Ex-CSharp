@@ -16,8 +16,8 @@ dotnet watch
 
 **Packages**
 
-dotnet add package Microsoft.EntityFrameworkCore
-dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore<br>
+dotnet add package Microsoft.EntityFrameworkCore.Design<br>
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 
 **Migrations**
